@@ -10,6 +10,11 @@ https://github.com/theadeyemiolayinka
  */
 package sage.theadeyemiolayinka.projects.solveX.Views;
 
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JFrame;
+
 /**
  *
  * @author Yinka
@@ -92,12 +97,32 @@ public class Splash extends javax.swing.JFrame {
         }
         //</editor-fold>
         
+        JFrame splash = new Splash();
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Splash().setVisible(true);
+                // Declare and Instantize Splash Screen
+                splash.setVisible(true);
+                           
             }
         });
+        
+                try {
+                    /**
+                     * Where have you ever heard of an actual loading 😂.
+                     *
+                     * Just wait 5 seconds and proceed.
+                     */
+                    TimeUnit.SECONDS.sleep(5);
+                    // Move to next screen
+                    new Chooser().setVisible(true);
+                    splash.setVisible(false);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(Splash.class.getName()).log(Level.SEVERE, null, ex);
+                    // Move to next screen
+                    new Chooser().setVisible(true);
+                    splash.setVisible(false);
+                }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
