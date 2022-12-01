@@ -6,17 +6,37 @@ https://github.com/theadeyemiolayinka
  */
 package sage.theadeyemiolayinka.projects.solveX.Views;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.awt.List;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.imageio.ImageIO;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
+import sage.theadeyemiolayinka.projects.solveX.Views.classes.Drivers;
+import sage.theadeyemiolayinka.projects.solveX.drivers.BaseDriver;
+
 /**
  *
  * @author Yinka
  */
 public class Chooser extends javax.swing.JFrame {
+    
+    protected HashMap<String,Class> drivers;
+    protected List options;
 
     /**
      * Creates new form Chooser
      */
     public Chooser() {
         initComponents();
+        try {
+            setIconImage(ImageIO.read(getClass().getResource("/resources/assets/icon.png")));
+        } catch (IOException ex) {
+            Logger.getLogger(Splash.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -28,22 +48,158 @@ public class Chooser extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        bgPanel = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        driversList = new javax.swing.JList<>();
+        head = new javax.swing.JLabel();
+        proceed = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("SolveX");
+        setBackground(new java.awt.Color(85, 79, 79));
+        setMaximumSize(new java.awt.Dimension(600, 480));
+        setMinimumSize(new java.awt.Dimension(600, 480));
+        setName("Chooser"); // NOI18N
+        setResizable(false);
+
+        bgPanel.setBackground(new java.awt.Color(85, 79, 79));
+        bgPanel.setFont(new java.awt.Font("Solway", 0, 14)); // NOI18N
+        bgPanel.setMaximumSize(new java.awt.Dimension(600, 480));
+        bgPanel.setMinimumSize(new java.awt.Dimension(600, 480));
+        bgPanel.setPreferredSize(new java.awt.Dimension(600, 480));
+
+        jScrollPane1.setFont(new java.awt.Font("Solway", 0, 14)); // NOI18N
+        jScrollPane1.setMaximumSize(new java.awt.Dimension(600, 480));
+        jScrollPane1.setMinimumSize(new java.awt.Dimension(600, 480));
+        jScrollPane1.setPreferredSize(new java.awt.Dimension(600, 480));
+
+        driversList.setFont(new java.awt.Font("Solway", 0, 14)); // NOI18N
+        driversList.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        driversList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
+            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
+                driversListValueChanged(evt);
+            }
+        });
+        jScrollPane1.setViewportView(driversList);
+
+        head.setBackground(new java.awt.Color(21, 21, 21));
+        head.setFont(new java.awt.Font("Rubik Distressed", 0, 48)); // NOI18N
+        head.setForeground(new java.awt.Color(249, 229, 54));
+        head.setText("SolveX");
+
+        proceed.setBackground(new java.awt.Color(249, 229, 54));
+        proceed.setFont(new java.awt.Font("Nerko One", 0, 18)); // NOI18N
+        proceed.setForeground(new java.awt.Color(85, 79, 79));
+        proceed.setText("Proceed");
+        proceed.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        proceed.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                proceedActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout bgPanelLayout = new javax.swing.GroupLayout(bgPanel);
+        bgPanel.setLayout(bgPanelLayout);
+        bgPanelLayout.setHorizontalGroup(
+            bgPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bgPanelLayout.createSequentialGroup()
+                .addGroup(bgPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(bgPanelLayout.createSequentialGroup()
+                        .addGap(252, 252, 252)
+                        .addComponent(proceed)
+                        .addGap(0, 253, Short.MAX_VALUE))
+                    .addGroup(bgPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(bgPanelLayout.createSequentialGroup()
+                .addGap(202, 202, 202)
+                .addComponent(head)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        bgPanelLayout.setVerticalGroup(
+            bgPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgPanelLayout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addComponent(head)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(proceed)
+                .addContainerGap(45, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(bgPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(bgPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void driversListValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_driversListValueChanged
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_driversListValueChanged
+
+    private void proceedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_proceedActionPerformed
+        try {
+            // TODO add your handling code here:
+            BaseDriver selected = (BaseDriver) Drivers.getAll().get(driversList.getSelectedValue()).newInstance();
+            Main main = new Main(selected);
+            main.work();
+            main.setVisible(true);
+            
+            dispose();
+        } catch (NullPointerException | NoSuchMethodException | InstantiationException | IllegalAccessException ex) {
+            //Logger.getLogger(Chooser.class.getName()).log(Level.SEVERE, null, ex);
+            
+            JOptionPane optionPane = new JOptionPane("Invalid or no operation chosen.",JOptionPane.ERROR_MESSAGE);
+            JDialog dialog = optionPane.createDialog("Error!");
+            dialog.setAlwaysOnTop(true);
+            try {
+                dialog.setIconImage(ImageIO.read(getClass().getResource("/resources/assets/icon.png")));
+            } catch (IOException ex1) {
+                Logger.getLogger(Chooser.class.getName()).log(Level.SEVERE, null, ex1);
+            }
+            dialog.setVisible(true);
+        }
+    }//GEN-LAST:event_proceedActionPerformed
+
+    public void work(){            
+        try{
+            drivers = Drivers.getAll();
+            options = new List();
+            System.out.println("Generating Classes...");  
+            for(Map.Entry m : drivers.entrySet()){    
+                //System.out.println(m.getKey()+" => "+m.getValue());    
+                options.add(m.getKey().toString());
+            }
+            
+            driversList.setListData(options.getItems());
+        }catch(IllegalAccessException | InstantiationException | NoSuchMethodException ex){
+            Logger.getLogger(Chooser.class.getName()).log(Level.SEVERE, null, ex);
+        }
+      
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -77,8 +233,16 @@ public class Chooser extends javax.swing.JFrame {
                 new Chooser().setVisible(true);
             }
         });
+      
+
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel bgPanel;
+    private javax.swing.JList<String> driversList;
+    private javax.swing.JLabel head;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton proceed;
     // End of variables declaration//GEN-END:variables
 }

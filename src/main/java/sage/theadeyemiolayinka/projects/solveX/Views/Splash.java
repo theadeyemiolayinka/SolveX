@@ -10,9 +10,11 @@ https://github.com/theadeyemiolayinka
  */
 package sage.theadeyemiolayinka.projects.solveX.Views;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 
 /**
@@ -26,6 +28,11 @@ public class Splash extends javax.swing.JFrame {
      */
     public Splash() {
         initComponents();
+        try {
+            setIconImage(ImageIO.read(getClass().getResource("/resources/assets/icon.png")));
+        } catch (IOException ex) {
+            Logger.getLogger(Splash.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -39,7 +46,7 @@ public class Splash extends javax.swing.JFrame {
 
         bg = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("SolveX");
         setBackground(new java.awt.Color(0, 0, 0));
         setName("Splash"); // NOI18N
@@ -98,6 +105,7 @@ public class Splash extends javax.swing.JFrame {
         //</editor-fold>
         
         JFrame splash = new Splash();
+        Chooser chooser = new Chooser();
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -115,13 +123,14 @@ public class Splash extends javax.swing.JFrame {
                      */
                     TimeUnit.SECONDS.sleep(5);
                     // Move to next screen
-                    new Chooser().setVisible(true);
-                    splash.setVisible(false);
+                    chooser.work();
+                    chooser.setVisible(true);
+                    splash.dispose();
                 } catch (InterruptedException ex) {
                     Logger.getLogger(Splash.class.getName()).log(Level.SEVERE, null, ex);
                     // Move to next screen
                     new Chooser().setVisible(true);
-                    splash.setVisible(false);
+                    splash.dispose();
                 }
     }
 
