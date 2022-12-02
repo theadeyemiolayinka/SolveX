@@ -22,15 +22,15 @@ public class Subtraction extends BaseDriver{
                 "There are three parts to a subtraction problem. The part you start with is called the minuend. The part being taken away is called the subtrahend. The part that is left after subtraction is called the difference." +
                 "\n\n" + "Here, x is the minuend and y is the subtrahend.";
         
-        data.put("x", "0");
-        data.put("y", "0");
+        data.put("x", null);
+        data.put("y", null);
     }
     
     @Override
     public String eval(){
         try{
-            int res = Integer.valueOf(getData("x")) - Integer.valueOf(getData("y"));
-            return "Answer:" + String.valueOf(res);
+            double res = Double.valueOf(getData("x")) - Double.valueOf(getData("y"));
+            return "Answer: " + String.valueOf(res);
         }catch(Exception e){
             return ERROR_MSG;
         }

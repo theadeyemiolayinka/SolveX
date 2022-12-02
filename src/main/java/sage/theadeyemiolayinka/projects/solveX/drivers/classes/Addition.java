@@ -20,15 +20,15 @@ public class Addition extends BaseDriver{
         desc = "Addition in math is a process of combining two or more numbers. Addends are the numbers added, and the result or the final answer we get after the process is called the sum. It is one of the essential mathematical functions we use in our everyday activities." +
                 "\n\n" + "Here, x and y are the addends.";
         
-        data.put("x", "0");
-        data.put("y", "0");
+        data.put("x", null);
+        data.put("y", null);
     }
     
     @Override
     public String eval(){
         try{
-            int res = Integer.valueOf(getData("x")) + Integer.valueOf(getData("y"));
-            return "Answer:" + String.valueOf(res);
+            double res = Double.valueOf(getData("x")) + Double.valueOf(getData("y"));
+            return "Answer: " + String.valueOf(res);
         }catch(Exception e){
             return ERROR_MSG;
         }
