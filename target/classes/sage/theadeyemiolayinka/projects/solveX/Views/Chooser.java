@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.awt.List;
 import java.io.IOException;
+import java.util.Collections;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
@@ -187,13 +188,13 @@ public class Chooser extends javax.swing.JFrame {
         try{
             drivers = Drivers.getAll();
             options = new List();
-            System.out.println("Generating Classes...");  
+            //System.out.println("Generating Classes...");  
             for(Map.Entry m : drivers.entrySet()){    
                 //System.out.println(m.getKey()+" => "+m.getValue());    
                 options.add(m.getKey().toString());
             }
-            
             driversList.setListData(options.getItems());
+            
         }catch(IllegalAccessException | InstantiationException | NoSuchMethodException ex){
             Logger.getLogger(Chooser.class.getName()).log(Level.SEVERE, null, ex);
         }

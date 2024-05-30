@@ -8,6 +8,7 @@ package sage.theadeyemiolayinka.projects.solveX.Views.classes;
 
 import java.util.HashMap;
 import java.util.Set;
+import java.util.TreeSet;
 import java.util.stream.Collectors;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
@@ -46,6 +47,7 @@ public class Drivers {
     public static HashMap<String,Class> getAll() throws NoSuchMethodException, InstantiationException, IllegalAccessException{
         HashMap<String,Class> res = new HashMap();
         Set<Class> classes = Drivers.getClasses(PACKAGE_NAME);
+        //Set<Class> sClasses = new TreeSet<Class>(classes);
         
         for (Class value : classes) {
            BaseDriver driver = (BaseDriver) value.newInstance();
