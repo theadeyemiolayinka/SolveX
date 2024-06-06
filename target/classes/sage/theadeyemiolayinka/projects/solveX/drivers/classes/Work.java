@@ -16,7 +16,7 @@ public class Work extends BaseDriver{
     
     public Work(){
         name = "Work";
-        by = "Ayoola Ibukunoluwa Ayomikun 2022/11335";
+        by = "Mechatronics Batch A Team 1 (Thur 11-1)";
         desc = "Work is said to be done whenever a force moves a body through a certain distance in the direction of a force." +
                 "\n\n" + "Here, F is the force and d is the distance.";
         

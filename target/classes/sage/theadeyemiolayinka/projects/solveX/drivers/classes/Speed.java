@@ -16,7 +16,7 @@ public class Speed extends BaseDriver{
     
     public Speed(){
         name = "Average Speed";
-        by = "EZEKIEL CHUKWUEMEKA FIDELIS 2022/11096";
+        by = "Mechatronics Batch A Team 1 (Thur 11-1)";
         desc = "This is the average of speed of a moving body for the overall distance that it has covered " +
                 "\n\n" + "Here, s is the distance t is the time taken.";
         

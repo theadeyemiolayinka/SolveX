@@ -16,7 +16,7 @@ public class Division extends BaseDriver{
     
     public Division(){
         name = "Division";
-        by = "Otitoloju Ephraim 2022/11309";
+        by = "Mechatronics Batch A Team 1 (Thur 11-1)";
         desc = "The division is the process of repetitive subtraction. It is the inverse of the multiplication operation. It is defined as the act of forming equal groups. While dividing numbers, we break down a larger number into smaller numbers such that the multiplication of those smaller numbers will be equal to the larger number taken." +
                 "\n\n" + "Here, x and y are the numbers.";
         

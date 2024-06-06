@@ -16,7 +16,7 @@ public class Subtraction extends BaseDriver{
     
     public Subtraction(){
         name = "Subtraction";
-        by = "Olayinka Adeyemi 2022/11512";
+        by = "Mechatronics Batch A Team 1 (Thur 11-1)";
         desc = "Subtraction in mathematics means you are taking something away from a group or number of things. When you subtract, what is left in the group becomes less.\n" +
                 "\n" +
                 "There are three parts to a subtraction problem. The part you start with is called the minuend. The part being taken away is called the subtrahend. The part that is left after subtraction is called the difference." +

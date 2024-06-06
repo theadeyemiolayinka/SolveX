@@ -14,6 +14,7 @@ sage\theadeyemiolayinka\projects\solveX\drivers\classes\Power.class
 sage\theadeyemiolayinka\projects\solveX\Views\Chooser$1.class
 sage\theadeyemiolayinka\projects\solveX\Views\classes\Drivers.class
 sage\theadeyemiolayinka\projects\solveX\drivers\classes\Work.class
+sage\theadeyemiolayinka\projects\solveX\Views\Home$1.class
 sage\theadeyemiolayinka\projects\solveX\drivers\classes\ProjectileMotion2.class
 sage\theadeyemiolayinka\projects\solveX\Views\Main$2.class
 sage\theadeyemiolayinka\projects\solveX\Views\Chooser$2.class
@@ -27,4 +28,6 @@ sage\theadeyemiolayinka\projects\solveX\drivers\classes\Velocity.class
 sage\theadeyemiolayinka\projects\solveX\Views\Splash.class
 sage\theadeyemiolayinka\projects\solveX\drivers\classes\SimultanousEquation.class
 sage\theadeyemiolayinka\projects\solveX\drivers\classes\Subtraction.class
+sage\theadeyemiolayinka\projects\solveX\Views\Home.class
+sage\theadeyemiolayinka\projects\solveX\Views\Home$2.class
 sage\theadeyemiolayinka\projects\solveX\Views\Chooser$3.class

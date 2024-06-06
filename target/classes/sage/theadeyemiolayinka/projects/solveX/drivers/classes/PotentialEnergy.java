@@ -16,7 +16,7 @@ public class PotentialEnergy extends BaseDriver{
     
     public PotentialEnergy(){
         name = "Potential Energy";
-        by = "Ayoola Ibukunoluwa Ayomikun 2022/11335";
+        by = "Mechatronics Batch A Team 1 (Thur 11-1)";
         desc = "Potential Energy is the energy a body possesses because of its position." +
                 "\n\n" + "Here, m is the mass, g is the value for gravity (default is 10, you can choose to edit) and h is the height.";
         

@@ -16,11 +16,11 @@ public class Power extends BaseDriver{
     
     public Power(){
         name = "Power";
-        by = "Ayoola Ibukunoluwa Ayomikun 2022/11335";
+        by = "Mechatronics Batch A Team 1 (Thur 11-1)";
         desc = "Power is defined as the rate of doing work." +
                 "\n\n" + "Here, W is the workdone and t is the time taken.";
         
-        data.put("", null);
+        data.put("W", null);
         data.put("t", null);
     }
     

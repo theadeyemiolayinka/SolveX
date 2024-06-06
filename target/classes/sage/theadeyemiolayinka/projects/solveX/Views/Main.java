@@ -175,7 +175,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_backActionPerformed
 
     public void work(){
-        driverName.setText(driver.getName());
+        driverName.setText(driver.getName() + " Calculator");
         by.setText("Added By: "+driver.getBy());
         desc.setText(driver.getDesc());
     }

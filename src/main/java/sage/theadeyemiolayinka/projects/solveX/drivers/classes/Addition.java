@@ -16,7 +16,7 @@ public class Addition extends BaseDriver{
     
     public Addition(){
         name = "Addition";
-        by = "Olayinka Adeyemi 2022/11512";
+        by = "Mechatronics Batch A Team 1 (Thur 11-1)";
         desc = "Addition in math is a process of combining two or more numbers. Addends are the numbers added, and the result or the final answer we get after the process is called the sum. It is one of the essential mathematical functions we use in our everyday activities." +
                 "\n\n" + "Here, x and y are the addends.";
         

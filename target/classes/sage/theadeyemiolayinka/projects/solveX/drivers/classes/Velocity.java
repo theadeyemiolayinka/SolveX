@@ -16,7 +16,7 @@ public class Velocity extends BaseDriver{
     
     public Velocity(){
         name = "Velocity";
-        by = "Ojo Olamide Anna 2022/11677";
+        by = "Mechatronics Batch A Team 1 (Thur 11-1)";
         desc = "Velocity is the direction of an object or a body. It is the rate of change of displacement. It is measured in m/s. It is a vector quantity. The dimension of velocity is LT^-1" +
                 "\n\n" + "Here, V is the final velocity, s; the distance covered, u; the initial velocity, a; the acceleration and t; the time taken" +
                 "\n\n" + "To look for the value of the velocity, just enter the values you have and leave the value of others empty when filling the form";

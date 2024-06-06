@@ -16,7 +16,7 @@ public class Multiplication extends BaseDriver{
     
     public Multiplication(){
         name = "Multiplication";
-        by = "Otitoloju Ephraim 2022/11309";
+        by = "Mechatronics Batch A Team 1 (Thur 11-1)";
         desc = "Multiplication is an operation that represents the basic idea of repeated addition of the same number. The numbers that are multiplied are called the factors and the result that is obtained after the multiplication of two or more numbers is known as the product of those numbers. Multiplication is used to simplify the task of repeated addition of the same number." +
                 "\n\n" + "Here, x and y are the factors.";
         

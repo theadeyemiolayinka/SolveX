@@ -16,7 +16,7 @@ public class ArithmeticProgression extends BaseDriver{
     
     public ArithmeticProgression(){
         name = "nth term of A.P";
-        by = "ADEKOLA OLUWASEGUN VICTOR 2022/11728";
+        by = "Mechatronics Batch A Team 1 (Thur 11-1)";
         desc = "Arithmetic progression is a sequence of numbers in which each differs from the preceding one by a constant quantity" +
                 "\n\n" + "Here, T(n) is the nth term, a is the first term and d is the common difference.";
         

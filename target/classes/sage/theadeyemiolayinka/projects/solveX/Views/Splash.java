@@ -101,7 +101,7 @@ public class Splash extends javax.swing.JFrame {
         //</editor-fold>
         
         JFrame splash = new Splash();
-        Chooser chooser = new Chooser();
+        Home home = new Home();
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
             // Declare and Instantize Splash Screen
@@ -112,12 +112,11 @@ public class Splash extends javax.swing.JFrame {
                     /**
                      * Where have you ever heard of an actual loading 😂.
                      *
-                     * Just wait 5 seconds and proceed.
+                     * Just wait 7 seconds and proceed.
                      */
-                    TimeUnit.SECONDS.sleep(5);
+                    TimeUnit.SECONDS.sleep(7);
                     // Move to next screen
-                    chooser.work();
-                    chooser.setVisible(true);
+                    home.setVisible(true);
                     splash.dispose();
                 } catch (InterruptedException ex) {
                     Logger.getLogger(Splash.class.getName()).log(Level.SEVERE, null, ex);

@@ -16,7 +16,7 @@ public class MagneticFluxDensity extends BaseDriver{
     
     public MagneticFluxDensity(){
         name = "Magnetic Flux Density";
-        by = "Ojo Olamide Anna 2022/11677";
+        by = "Mechatronics Batch A Team 1 (Thur 11-1)";
         desc = "Magnetic flux density in physics is the force acting per unit current per unit length on a wire placed at right angles to the magnetic field. It’s S.I unit is Tesla (T). " +
                 "\n\n" + "Here, ∅ is the Magnetic Flux and A is the cross sectional area.";
         

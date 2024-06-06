@@ -54,6 +54,7 @@ public class Chooser extends javax.swing.JFrame {
         driversList = new javax.swing.JList<>();
         head = new javax.swing.JLabel();
         proceed = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SolveX");
@@ -103,6 +104,10 @@ public class Chooser extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Tempus Sans ITC", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Select a Mathematical Operation to Perform:");
+
         javax.swing.GroupLayout bgPanelLayout = new javax.swing.GroupLayout(bgPanel);
         bgPanel.setLayout(bgPanelLayout);
         bgPanelLayout.setHorizontalGroup(
@@ -110,28 +115,34 @@ public class Chooser extends javax.swing.JFrame {
             .addGroup(bgPanelLayout.createSequentialGroup()
                 .addGroup(bgPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(bgPanelLayout.createSequentialGroup()
-                        .addGap(252, 252, 252)
-                        .addComponent(proceed)
-                        .addGap(0, 253, Short.MAX_VALUE))
-                    .addGroup(bgPanelLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addGroup(bgPanelLayout.createSequentialGroup()
+                        .addGap(165, 165, 165)
+                        .addComponent(jLabel1)
+                        .addGap(0, 147, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(proceed)
+                .addGap(253, 253, 253))
             .addGroup(bgPanelLayout.createSequentialGroup()
-                .addGap(202, 202, 202)
+                .addGap(198, 198, 198)
                 .addComponent(head)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         bgPanelLayout.setVerticalGroup(
             bgPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgPanelLayout.createSequentialGroup()
-                .addGap(48, 48, 48)
+                .addGap(12, 12, 12)
                 .addComponent(head)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel1)
+                .addGap(26, 26, 26)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(proceed)
-                .addContainerGap(45, Short.MAX_VALUE))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -237,6 +248,7 @@ public class Chooser extends javax.swing.JFrame {
     private javax.swing.JPanel bgPanel;
     private javax.swing.JList<String> driversList;
     private javax.swing.JLabel head;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton proceed;
     // End of variables declaration//GEN-END:variables

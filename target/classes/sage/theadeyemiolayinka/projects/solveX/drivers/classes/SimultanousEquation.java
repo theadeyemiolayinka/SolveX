@@ -16,8 +16,7 @@ public class SimultanousEquation extends BaseDriver{
     
     public SimultanousEquation(){
         name = "Simultanous Equation 2x2";
-        
-        by = "Olayinka Adeyemi 2022/11512";
+        by = "Mechatronics Batch A Team 1 (Thur 11-1)";
         desc = "Simultaneous equations are two or more algebraic equations with the same unknown variables and the same value of the variables satisfies all such equations. This implies that the simultaneous equations have a common solution." +
                 "\n\n" +
                 "ax + by = c"+

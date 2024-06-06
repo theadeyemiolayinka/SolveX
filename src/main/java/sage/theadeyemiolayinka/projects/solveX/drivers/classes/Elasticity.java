@@ -16,7 +16,7 @@ public class Elasticity extends BaseDriver{
     
     public Elasticity(){
         name = "Elasticity";
-        by = "Adelekun Oluwademilade David  2022/11355";
+        by = "Mechatronics Batch A Team 1 (Thur 11-1)";
         desc = "" +
                 "\n\n" + "Here, k is the force constant and e is the extension.";
         

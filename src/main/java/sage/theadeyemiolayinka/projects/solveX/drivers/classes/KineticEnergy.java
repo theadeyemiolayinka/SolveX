@@ -16,7 +16,7 @@ public class KineticEnergy extends BaseDriver{
     
     public KineticEnergy(){
         name = "Kinetic Energy";
-        by = "Ayoola Ibukunoluwa Ayomikun 2022/11335";
+        by = "Mechatronics Batch A Team 1 (Thur 11-1)";
         desc = "Kinetic Energy is the energy a body possesses because of its motion." +
                 "\n\n" + "Here, m is the mass and v is the velocity.";
         

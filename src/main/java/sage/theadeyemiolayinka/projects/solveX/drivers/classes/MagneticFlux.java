@@ -16,7 +16,7 @@ public class MagneticFlux extends BaseDriver{
     
     public MagneticFlux(){
         name = "Magnetic Flux";
-        by = "Nwankwere Destiny Chinonyerem 2022/11738";
+        by = "Mechatronics Batch A Team 1 (Thur 11-1)";
         desc = "The number of magnetic lines passing through area A is known as Magnetic flux." +
                 "\n\n" + "Φb = magnetic flux\n" +
                 "B = Magnetic field\n" +

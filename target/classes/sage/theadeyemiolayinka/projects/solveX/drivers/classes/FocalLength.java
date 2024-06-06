@@ -16,7 +16,7 @@ public class FocalLength extends BaseDriver{
     
     public FocalLength(){
         name = "Focal Length";
-        by = "Victor Anthony 2022/11149";
+        by = "Mechatronics Batch A Team 1 (Thur 11-1)";
         desc = "F = Focal Length \n" +
                 "U = Distance of the object from the mirror in cm\n" +
                 "V = Distance of the image from the mirror in cm";
