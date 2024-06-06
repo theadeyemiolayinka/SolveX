@@ -1,5 +1,5 @@
 
-![Logo](https://github.com/theadeyemiolayinka/SolveX/raw/1.0/src/main/java/resources/assets/icon.png)
+![Logo](https://github.com/theadeyemiolayinka/SolveX/raw/master/src/main/java/resources/assets/icon.png)
 
 
 # SolveX
@@ -18,7 +18,7 @@ This is the SolveX Project; a multi-purpose open-source calculator that can be e
 
 Contributions are always welcome!
 
-See [`contributing.md`](https://github.com/theadeyemiolayinka/SolveX/blob/1.0/contributing.md) for ways to get started.
+See [`contributing.md`](https://github.com/theadeyemiolayinka/SolveX/blob/master/contributing.md) for ways to get started.
 
 Please adhere to this project's `code of conduct`.
 
